@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import Beams from "./Beams";
+import BlurText from "./BlurText";
+
+const handleAnimationComplete = () => {
+  console.log("Animation completed!");
+};
 
 function Hero() {
   return (
@@ -28,7 +33,13 @@ function Hero() {
           transition={{ duration: 1 }}
           className="text-6xl md:text-7xl font-bold mb-5"
         >
-          Pallavi Rathore
+           <BlurText
+          text="Pallavi Rathore"
+          delay={20}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+        />
         </motion.h1>
 
         <motion.h2
