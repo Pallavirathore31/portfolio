@@ -49,7 +49,7 @@ function extendMaterial(BaseMaterial, cfg) {
 }
 
 const CanvasWrapper = ({ children }) => (
-  <Canvas dpr={[1, 2]} frameloop="always" className="w-full h-full relative">
+  <Canvas dpr={[1, 1.6]} frameloop="always" className="w-full h-full relative">
     {children}
   </Canvas>
 );
@@ -142,7 +142,7 @@ float cnoise(vec3 P){
 const Beams = ({
   beamWidth = 2,
   beamHeight = 15,
-  beamNumber = 12,
+  beamNumber = 4,
   lightColor = '#ffffff',
   speed = 2,
   noiseIntensity = 1.75,
@@ -272,7 +272,7 @@ const MergedPlanes = forwardRef(({ material, width, count, height }, ref) => {
   const mesh = useRef(null);
   useImperativeHandle(ref, () => mesh.current);
   const geometry = useMemo(
-    () => createStackedPlanesBufferGeometry(count, width, height, 0, 100),
+    () => createStackedPlanesBufferGeometry(count, width, height, 0, 40),
     [count, width, height]
   );
   useFrame((_, delta) => {

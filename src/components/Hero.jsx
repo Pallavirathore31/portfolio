@@ -3,7 +3,7 @@ import Beams from "./Beams";
 import BlurText from "./BlurText";
 
 const handleAnimationComplete = () => {
-  console.log("Animation completed!");
+  // console.log("Animation completed!");
 };
 
 function Hero() {
@@ -11,7 +11,7 @@ function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
       {/* Background Animation */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0">
         <Beams
           beamWidth={3}
           beamHeight={30}
