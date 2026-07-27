@@ -27,7 +27,7 @@ function Skills() {
     <section id="skills" className="py-20 px-5">
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl font-bold text-center mb-10">
+        <h2 className="text-4xl font-bold text-center mb-10"> 
           Skills
         </h2>
 
