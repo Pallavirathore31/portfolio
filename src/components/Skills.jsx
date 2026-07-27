@@ -1,5 +1,5 @@
 import reactImg from "../assets/images/react.png";
-import nextImg from "../assets/images/nextjs.png";
+import nextImg from "../assets/images/Nextjs.png";
 import nodeImg from "../assets/images/node.png";
 import expressImg from "../assets/images/expressjs.png";
 import mysqlImg from "../assets/images/mysql.png";
